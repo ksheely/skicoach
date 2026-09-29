@@ -1,6 +1,6 @@
 # Slope Notes — independent ski coaching concept
 
-A small, mobile-friendly React prototype exploring a single coaching cue after a ski run. This is an independent portfolio project, unaffiliated with Carv. It does not use Carv data, sensors, branding, or APIs. All session data and scores are fictional.
+A small, mobile-friendly React prototype exploring a single coaching cue after a ski run. This is a personal portfolio project, showcasing current abilities while trying new ones. It does not use real data, sensors, branding, or APIs. All session data and scores are fictional.
 
 ## Run locally
 
@@ -34,15 +34,14 @@ Open the URL printed by Vite. For a production build, run `npm run build` and `n
 
 `src/coaching.js` chooses a cue in this order: left/right turn gap of at least 10 points; balance score under 75; otherwise rhythm. This is a demonstration rule, **not validated biomechanical advice**. `src/data.js` contains hand-authored examples. The chart is illustrative.
 
-## Field validation plan
-
-1. Observe a few skiers using the prototype immediately after a run, without prompting. Record whether they find the cue and can repeat it.
-2. Test glare, gloves, cold, unreliable network, and audio audibility in a safe stationary setting.
-3. Have a qualified ski coach review cue language and whether it is actionable and appropriate to the data.
-4. Before any live sensor integration, define measurement confidence, handling for missing or delayed data, privacy and consent, safety review, and a human reviewed quality gate.
-5. Measure comprehension and usefulness alongside reliability; low crash rates alone do not show that feedback helps.
-
 ## Possible architecture if extended
 
 A mobile client could cache sessions locally and enqueue uploads; a backend could normalize sensor events and serve confidence-tagged summaries; a separate coaching service could generate and version cues. The client should show a cue only when validated data and timing allow it. This prototype intentionally implements none of those production components.
 
+## Current Bugs (because a project is never complete)
+
+I adjusted some CSS that broke some React components. I need to debug to find where that occured.
+
+## Screenshot
+
+![Application Screenshot](screenshot1.png)
